@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="chrisjohnny.hardcorders.Home"
+    android:background="@drawable/mainbackground2"
+    android:padding="0dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gymmelogo"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="300dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MY LOGS"
+        android:id="@+id/myLogsButton"
+        android:layout_marginBottom="35dp"
+        android:background="#ce6628"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/timerButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="tappedMyLogs" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TIMER"
+        android:id="@+id/timerButton"
+        android:textColor="#ffffff"
+        android:background="#852828"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/myLogsButton"
+        android:layout_marginBottom="23dp"
+        android:onClick="tappedTimer" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MY INFO"
+        android:id="@+id/myInfoButton"
+        android:background="#cf7c4b"
+        android:layout_marginBottom="35dp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/myLogsButton"
+        android:layout_alignStart="@+id/myLogsButton"
+        android:longClickable="false"
+        android:onClick="tappedMyInfo" />
+</RelativeLayout>

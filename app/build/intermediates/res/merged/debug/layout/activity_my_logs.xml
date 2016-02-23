@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    android:padding="0dp">
+
+    <RadioGroup
+        android:id="@+id/detection_type_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+    </RadioGroup>
+
+
+    <ScrollView
+        android:id="@+id/logs_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_above="@+id/toggle_reco"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/logs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/volume_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logs_container"
+        android:layout_marginTop="-6dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="0"
+        android:max="100"/>
+
+
+    <Button
+        android:id="@+id/clear_logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_logs_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#2E85FF"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_above="@+id/exampleTextView"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/toggle_reco"
+        android:allowUndo="false"
+        android:layout_marginLeft="142dp"
+        android:layout_marginRight="142dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/voiceinput"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ex: &quot;5 sets, 10 reps, bench press, 135 pounds&quot;"
+        android:id="@+id/exampleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/toggle_reco"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
