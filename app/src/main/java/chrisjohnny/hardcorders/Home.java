@@ -31,7 +31,6 @@ public class Home extends AppCompatActivity {
         //i.putExtra("locationInfo", position);
         startActivity(i);
 
-
     }
 
     public void tappedTimer(View view){
@@ -40,7 +39,12 @@ public class Home extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), Timer.class);
         //i.putExtra("locationInfo", position);
         startActivity(i);
+    }
 
+    public void sendSMS(View view){
+        Intent i = new Intent(getApplicationContext(), SMS.class);
+        //i.putExtra("locationInfo", position);
+        startActivity(i);
     }
 
 
