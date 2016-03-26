@@ -1,5 +1,6 @@
 package chrisjohnny.hardcorders;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Handler;
@@ -33,7 +34,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-public class MyLogs extends AppCompatActivity implements View.OnClickListener{
+public class MyLogs extends Activity implements View.OnClickListener{
 
     private Audio startEarcon;
     private Audio stopEarcon;

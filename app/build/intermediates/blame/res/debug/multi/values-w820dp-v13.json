@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "outputFile": "/home/chris/android-development/GymME/app/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,37 +11,13 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "/home/chris/android-development/GymME/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 295,
+                        "startOffset": 291,
                         "endColumn": 57,
-                        "endOffset": 348
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME_version2\\app\\build\\intermediates\\res\\merged\\debug\\values-w820dp-v13\\values-w820dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 57,
-                    "endOffset": 108
-                },
-                "from": {
-                    "file": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME_version2\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 295,
-                        "endColumn": 57,
-                        "endOffset": 348
+                        "endOffset": 344
                     }
                 }
             }

@@ -19,8 +19,6 @@ public class MyInfo extends AppCompatActivity {
     final String AUTH_TOKEN = "c849a64bcf234c8bc463d366da1de131";
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

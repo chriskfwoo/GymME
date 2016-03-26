@@ -1,18 +1,16 @@
 package chrisjohnny.hardcorders;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.content.Intent;
 import android.telephony.SmsManager;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class SMS extends AppCompatActivity {
+public class SMS extends Activity {
 
     private Button shareIntent;
     private Button send;
@@ -24,7 +22,7 @@ public class SMS extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sms);
 
-         phoneNo = (EditText) findViewById(R.id.mobileNumber);
+         phoneNo = (EditText)findViewById(R.id.mobileNumber);
          messageBody = (EditText) findViewById(R.id.smsBody);
 
         send = (Button) findViewById(R.id.send);
@@ -32,7 +30,7 @@ public class SMS extends AppCompatActivity {
         send.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                String number = phoneNo.getText().toString();
+                 String number = phoneNo.getText().toString();
                 String sms = messageBody.getText().toString();
 
                 try {
