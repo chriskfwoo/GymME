@@ -1,5 +1,7 @@
 package chrisjohnny.hardcorders;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,7 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +25,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 public class MyLogs extends AppCompatActivity implements View.OnClickListener{
 
@@ -32,9 +39,7 @@ public class MyLogs extends AppCompatActivity implements View.OnClickListener{
     private Audio stopEarcon;
     private Audio errorEarcon;
 
-
-    private RadioGroup detectionType;
-    private TextView logs;
+    static private TextView logs;
     private Button clearLogs;
     private Button toggleReco;
     private ProgressBar volumeBar;
@@ -42,15 +47,12 @@ public class MyLogs extends AppCompatActivity implements View.OnClickListener{
     private Transaction recoTransaction;
     private State state = State.IDLE;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_logs);
 
 
-
-        detectionType = (RadioGroup)findViewById(R.id.detection_type_picker );
         logs = (TextView)findViewById(R.id.logs);
 
         clearLogs = (Button)findViewById(R.id.clear_logs);
@@ -68,6 +70,8 @@ public class MyLogs extends AppCompatActivity implements View.OnClickListener{
         setState(State.IDLE);
 
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -252,10 +256,13 @@ public class MyLogs extends AppCompatActivity implements View.OnClickListener{
 
                 String dateString = monthString + " " +date+", "+year;
 
+
                 String sentence = dateString+"\n\t\t\t\t\t" +exercise + " - " +weightValue + " " +weightUnit +"\n\t\t\t\t\t"+setsValue+ " sets x " +repsValue+" reps \n\n\n";
 
+
                 logs.append(sentence);
-                //allLogs.add(sentence);
+
+
 
 
             } catch (JSONException e) {
