@@ -60,4 +60,14 @@
         android:layout_alignStart="@+id/myLogsButton"
         android:longClickable="false"
         android:onClick="tappedMyInfo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imageView"
+        android:onClick="sendSMS"
+        android:nestedScrollingEnabled="false" />
 </RelativeLayout>

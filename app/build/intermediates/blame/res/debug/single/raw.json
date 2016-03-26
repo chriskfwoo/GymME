@@ -8,7 +8,19 @@
         "source": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME_version2\\app\\src\\main\\res\\raw\\sk_stop.pcm"
     },
     {
+        "merged": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME\\app\\build\\intermediates\\res\\merged\\debug\\raw\\sk_start.pcm",
+        "source": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME\\app\\src\\main\\res\\raw\\sk_start.pcm"
+    },
+    {
+        "merged": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME\\app\\build\\intermediates\\res\\merged\\debug\\raw\\sk_error.pcm",
+        "source": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME\\app\\src\\main\\res\\raw\\sk_error.pcm"
+    },
+    {
         "merged": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME_version2\\app\\build\\intermediates\\res\\merged\\debug\\raw\\sk_start.pcm",
         "source": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME_version2\\app\\src\\main\\res\\raw\\sk_start.pcm"
+    },
+    {
+        "merged": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME\\app\\build\\intermediates\\res\\merged\\debug\\raw\\sk_stop.pcm",
+        "source": "C:\\Users\\Woozzie\\AndroidStudioProjects\\GymME\\app\\src\\main\\res\\raw\\sk_stop.pcm"
     }
 ]
