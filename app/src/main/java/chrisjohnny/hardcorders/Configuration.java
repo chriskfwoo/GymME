@@ -1,8 +1,8 @@
 package chrisjohnny.hardcorders;
 
 import android.net.Uri;
-
 import com.nuance.speechkit.PcmFormat;
+
 
 
 public class Configuration {

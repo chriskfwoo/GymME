@@ -22,7 +22,7 @@ public class Timer extends Activity {
     int counter = 1;
 
     public void voiceInput(View view){
-        Log.i("Voice input clicked", "johnny suck a dick");
+        Log.i("Voice input clicked", "");
     }
 
     public void resetCounter(View view){

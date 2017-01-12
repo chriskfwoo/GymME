@@ -12,6 +12,8 @@ public class Home extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+//        ParseApplication parseApplication = new ParseApplication();
+//        parseApplication.onCreate();
     }
 
     public void tappedMyInfo(View vew){
